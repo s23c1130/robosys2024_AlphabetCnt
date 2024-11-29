@@ -3,6 +3,8 @@
   SPDX-License-Identifier:BSD-3-Clause
 --->
 
+[![test](https://github.com/s23c1130/robosys2024_AlphabetCnt/actions/workflows/test.yml/badge.svg)](https://github.com/s23c1130/robosys2024_AlphabetCnt/actions/workflows/test.yml)
+
 # はじめに
 このプログラムは、アルファベット+数字の文字数をカウントするプログラムです。
 
