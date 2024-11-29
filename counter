@@ -133,12 +133,12 @@ try:
                 print(kugiri_comm,end='')
                 print(sort_moji[i][0])
 
-except FileNotFoundError :
-    print("ファイルを開けませんでした。(ファイルが見つかりません)")
+except FileNotFoundError:
+    print("ファイルを開けませんでした。(ファイルが見つかりません)", file=sys.stderr)
     exit(3)
 except PermissionError:
-    print("ファイルを開く権限がありません。")
-    exit(3)
+    print("ファイルを開く権限がありません。", file=sys.stderr)
+    exit(4)
 
 
         
