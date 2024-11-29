@@ -16,7 +16,7 @@
 - Python 3.10.12
 - WSL2 (Ubuntu 22.04 LTS)
 
-# ダウンロード＆インストール方法
+# 導入方法
 ```bash
 $ git clone https://github.com/s23c1130/robosys2024_AlphabetCnt.git
 $ cd robosys2024_AlphabetCnt
