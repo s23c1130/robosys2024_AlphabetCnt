@@ -20,6 +20,7 @@
 ```bash
 $ git clone https://github.com/s23c1130/robosys2024_AlphabetCnt.git
 $ cd robosys2024_AlphabetCnt
+$ chmod +x counter
 ```
 
 # 使い方
