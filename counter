@@ -52,10 +52,10 @@ try:
                 print("文字をカウントして出力します\n-i:インプットファイル指定 \n-o:アウトプット指定(オプション)")
                 print("-s:ソート(オプション・昇順) \n-r:ソート(オプション・降順)\n-a:大文字・小文字を区別しない(オプション) \n-k:区切り文字変更（オプション)\n-e コマンド入力終了")
                 print("例： $char_count (enter) -i (enter) input.txt (enter) -r (enter) -k (enter) : (enter) -e (enter)")
-                sys.exit(0)
+                exit(0)
             else:
                 print("不明なコマンド -h(help)を参照\n")
-                sys.exit(1)
+                exit(1)
 
         if before_tmp == BEFORE_INPUT:
             input_file = line
