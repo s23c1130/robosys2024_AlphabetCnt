@@ -15,8 +15,6 @@
 ### テスト環境
 - Python 3.10.12
 - WSL2 (Ubuntu 22.04 LTS)
-<BR>
-<BR>
 - Github Actions
     - ubuntu-latest
     - Python Version 3.7~3.10
