@@ -49,7 +49,7 @@ b,1
 ### 例
 ```bash
 # input.txtを読み込ませて、output.txtに出力 ソートを降順にし、区切り文字を':'に変更
-$ cat input.txt | ./counter -r -k :
+$ cat input.txt | ./counter -r -k : -o output.txt
 ```
 ### output.txtの結果
 ```
