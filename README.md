@@ -18,8 +18,8 @@
 <BR>
 <BR>
 - Github Actions
-  - ubuntu-latest
-  - Python Version 3.7~3.10
+    - ubuntu-latest
+    - Python Version 3.7~3.10
 
 # 導入方法
 ```bash
