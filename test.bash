@@ -13,29 +13,36 @@ res=0
 echo "TEST_test_aaabbcccczzzz123432" > /tmp/test_data.txt
 
 ### 通常のテスト(正常に終わるか) ###
-echo -e "-i\n/tmp/test_data.txt\n-k\n:\n-e" | ./counter > /tmp/test_output.txt
-grep b:2 /tmp/test_output.txt
+cat /tmp/test_data.txt | ./counter > /tmp/test_output.txt
+grep b,2 /tmp/test_output.txt
 out=$?
 
 [ "$out" = 0 ] || ng "$LINENO"
 
 ### ヘルプ表示テスト ###
-echo -e "-h" | ./counter > /tmp/test_help.txt
+echo | ./counter -h > /tmp/test_help.txt
 grep 文字をカウントして出力します /tmp/test_help.txt
 out=$?
 
 [ "$out" = 0 ] || ng "$LINENO"
 
-### 入力エラーテスト（存在しない適当なファイルを入力する) ###
-
-echo -e "-i\n/tmp/nweokgjeiogneiopfj.txt\n-k\n:\n-e" | ./counter > /tmp/test_output.txt
+### 区切り変更テスト（区切り文字を変更してみる)
+cat /tmp/test_data.txt | ./counter -k :> /tmp/test_output.txt
+grep b:2 /tmp/test_output.txt
 out=$?
 
-[ "$out" = 0 ] && ng "$LINENO"
+[ "$out" = 0 ] || ng "$LINENO"
 
-### 区切り変更テスト（区切り文字を変更してみる)
-echo -e "-i\n/tmp/test_data.txt\n-k\n,\n-e" | ./counter > /tmp/test_output.txt
-grep b,2 /tmp/test_output.txt
+### 大文字・小文字を区別しないテスト
+cat /tmp/test_data.txt | ./counter -a > /tmp/test_output.txt
+grep T,4 /tmp/test_output.txt
+out=$?
+
+[ "$out" = 0 ] || ng "$LINENO"
+
+### 存在しない引数を選択した場合
+cat /tmp/test_data.txt | ./counter -d 2> /tmp/test_output.log
+grep "不明なコマンド -h(help)を参照" /tmp/test_output.log
 out=$?
 
 [ "$out" = 0 ] || ng "$LINENO"
