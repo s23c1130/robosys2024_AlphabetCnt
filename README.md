@@ -78,7 +78,12 @@ a:47
  - このソフトウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます。
  - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
     - [第3回: Linux環境でのPythonプログラミングII](https://ryuichiueda.github.io/slides_marp/robosys2024/lesson3.html)
+      - 13ページ目 ファイルからの入力 (counter)
     - [第5回: 著作権とライセンス](https://ryuichiueda.github.io/slides_marp/robosys2024/lesson5.html)
+      - 10ページ目 作業: コードに著作権表示 (すべてのコードファイル)
     - [第6回: ソフトウェアのテスト](https://ryuichiueda.github.io/slides_marp/robosys2024/lesson6.html)
+      - 19ページ目 コマンドに対するリグレッションテストの記述 (test.bash)
+      - 20ページ目 コマンドに対するリグレッションテストの記述(続き)
     - [第7回: GitHubでのテスト](https://ryuichiueda.github.io/slides_marp/robosys2024/lesson7.html)
+      - 8ページ目 テストの手続きの記述 (test.yml)
  - ©️ 2024 - Toki Makabe
